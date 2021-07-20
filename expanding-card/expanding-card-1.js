@@ -5,7 +5,6 @@ const layers = document.querySelectorAll(".layer-jumbotron");
 layers.forEach((layer, i, arr) => {
   layer.addEventListener("mouseover", () => {
     removeActiveClasses();
-    layer.classList.add("layer-jumbotron-active");
     panels[i].classList.add("active");
     headingJumbotron.style.visibility = "hidden";
   });
@@ -18,6 +17,5 @@ layers.forEach((layer, i, arr) => {
 function removeActiveClasses() {
   layers.forEach((layer, i, arr) => {
     panels[i].classList.remove("active");
-    layer.classList.remove("layer-jumbotron-active");
   });
 }
