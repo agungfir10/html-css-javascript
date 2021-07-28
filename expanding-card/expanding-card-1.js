@@ -1,5 +1,5 @@
 const panels = document.querySelectorAll(".panel");
-const headingJumbotron = document.querySelector("#jumbotron h2");
+const headingJumbotron = document.querySelector("#jumbotron h1");
 
 panels.forEach((panel, i, arr) => {
   panel.addEventListener("mouseover", () => {
